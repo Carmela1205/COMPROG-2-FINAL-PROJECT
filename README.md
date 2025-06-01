@@ -10,7 +10,7 @@ Welcome to **COMPROG-2-FINAL-PROJECT**, a narrative-driven, choice-based RPG set
 - **Unique Characters** – Engage with townsfolk, uncover their secrets, and influence their fates.
 
 ## About the Developers
-This project is created by **Group Dopple G**, composed of:
+This project is created by **Group Dopple G** of **BSIT 1-1**, composed of:
 - **Jericho D. Pajaron** (Team Leader)
 - **Kurt Wenson F. Aldave**
 - **Carmela B. Azarcon**
