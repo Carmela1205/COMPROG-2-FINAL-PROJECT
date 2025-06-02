@@ -42,4 +42,4 @@ Defines the **game's licensing details** and usage rights.
 - **Developers:** Use the `Code` folder to modify or add scripts.  
 - **Story Writers:** Work within the `Story` folder and update respective `.md` files.  
 - **Artists & Designers:** Store assets properly within `Assets`.  
-- **Game Testers:** Find compiled versions in `Builds/`.  
+- **Game Testers:** Find compiled versions in `Builds`.  
