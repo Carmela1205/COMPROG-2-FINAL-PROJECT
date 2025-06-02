@@ -14,7 +14,7 @@ Welcome to **Life Choices: A Story-Based Game**, a **narrative-driven, choice-ba
 **Unique Characters** – Engage with townsfolk, uncover their secrets, and influence their fates.  
 
 ## **About the Developers**  
-This project is created by **Group Dopple G** of **BSIT 1-1**, composed of:  
+This project is created by Group **Dopple G** of **BSIT 1-1**, composed of:  
 - **Jericho D. Pajaron** (Team Leader)  
 - **Kurt Wenson F. Aldave**  
 - **Franchezka Jean S. Agregado**  
