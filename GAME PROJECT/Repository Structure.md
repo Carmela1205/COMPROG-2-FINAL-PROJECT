@@ -1,4 +1,4 @@
-# GameProject Repository Guide  
+# Game Project Repository Guide  
 
 This repository contains all essential files and assets for **Life Choices: A Story-Based Game**. Below is a structured breakdown of each folder and its purpose to ensure easy navigation and organization.  
 
