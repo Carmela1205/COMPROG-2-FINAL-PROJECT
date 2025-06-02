@@ -1,0 +1,18 @@
+GameProject/
+├── assets/         # Sprites, textures, music, UI elements, animations  
+├── code/           # Game logic, scripts, shaders  
+├── story/          # Narrative structure and flowchart  
+│   ├── flowchart.png  
+│   ├── act_I.md  
+│   ├── act_II.md  
+│   ├── act_III.md  
+│   ├── act_IV.md  
+│   └── README.md  
+├── docs/           # Game introduction and references  
+│   ├── introduction.md  
+│   └── README.md  
+├── builds/         # Compiled versions  
+├── checklist.md    # Progress tracking  
+├── .gitignore      # Ignore unnecessary files  
+├── README.md       # Main project documentation  
+└── LICENSE         # Licensing details  
