@@ -1,0 +1,61 @@
+{
+  "npc": "stranger",
+  "dialogue": [
+    {
+      "id": "scene4_1_confront",
+      "speaker": "mc",
+      "required_flags": ["sawStranger"],
+      "text": "Hello, Excuse me? What are you doing?",
+      "next": ["scene4_1_stranger_response"]
+    },
+    {
+      "id": "scene4_1_stranger_response",
+      "speaker": "stranger",
+      "text": "Wait... you see me?",
+      "next": ["scene4_1_mc_suspicion"]
+    },
+    {
+      "id": "scene4_1_mc_suspicion",
+      "speaker": "mc",
+      "text": "What are you up to?",
+      "next": ["scene4_1_mc_runs"]
+    },
+    {
+      "id": "scene4_1_mc_runs",
+      "speaker": "mc",
+      "text": "(whisper) This is a bad idea. I should go home quickly.",
+      "set_flags": ["confrontedStranger"],
+      "next": ["end"]
+    },
+
+    {
+      "id": "scene7_denial",
+      "speaker": "mc",
+      "required_flags": ["ignoredStranger"],
+      "text": "I hope that I'm only daydreaming.",
+      "next": ["scene7_sleep"]
+    },
+    {
+      "id": "scene7_sleep",
+      "speaker": "mc",
+      "text": "I should get to sleep and rest.",
+      "set_flags": ["ending1"],
+      "next": ["end"]
+    },
+
+    {
+      "id": "scene8_morning_reflection",
+      "speaker": "mc",
+      "required_flags": ["confrontedStranger"],
+      "text": "Yesterday felt different. Did I really see someone?",
+      "set_flags": ["startAct2"],
+      "next": ["end"]
+    },
+
+    {
+      "id": "end",
+      "speaker": "narrator",
+      "text": "..."
+    }
+  ]
+}

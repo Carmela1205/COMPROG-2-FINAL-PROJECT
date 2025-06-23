@@ -1,0 +1,55 @@
+{
+  "npc": "local",
+  "dialogue": [
+    {
+      "id": "scene3_first_delivery",
+      "speaker": "local",
+      "required_flags": ["gotBreadQuest"],
+      "text": "Oh, this is the bread that I ordered. Thank you for delivering it to me.",
+      "next": ["scene3_ask_name"]
+    },
+    {
+      "id": "scene3_ask_name",
+      "speaker": "local",
+      "text": "Are you his nephew??? What's your name??",
+      "next": ["scene3_mc_introduces"]
+    },
+    {
+      "id": "scene3_mc_introduces",
+      "speaker": "mc",
+      "text": "Yes, I'm the nephew of the old man in the bakery. I am Namae.",
+      "set_flags": ["deliveredToMarlene1"],
+      "next": ["end"]
+    },
+
+    {
+      "id": "scene6_repeat_delivery",
+      "speaker": "local",
+      "required_flags": ["gotBreadQuest2"],
+      "text": "Oh, it's you again. Thank you for your efforts.",
+      "set_flags": ["deliveredToMarlene2"],
+      "next": ["end"]
+    },
+
+    {
+      "id": "scene7_final_delivery",
+      "speaker": "local",
+      "required_flags": ["finalDelivery"],
+      "text": "Thank you so much. Go home early now and be careful because of the news, everyone is on edge.",
+      "next": ["scene7_mc_reply"]
+    },
+    {
+      "id": "scene7_mc_reply",
+      "speaker": "mc",
+      "text": "Thank you and be careful too, miss Marlene.",
+      "set_flags": ["finalDeliveryComplete"],
+      "next": ["end"]
+    },
+
+    {
+      "id": "end",
+      "speaker": "narrator",
+      "text": "..."
+    }
+  ]
+}

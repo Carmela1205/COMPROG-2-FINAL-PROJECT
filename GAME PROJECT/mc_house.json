@@ -1,0 +1,76 @@
+{
+  "npc": "mc_house",
+  "dialogue": [
+    {
+      "id": "house_intro_tv",
+      "speaker": "mc",
+      "text": "I need to go to the Bakery and help uncle.",
+      "set_flags": ["quest_go_to_bakery_1"],
+      "next": ["end"]
+    },
+    {
+      "id": "house_return_sleep_1",
+      "speaker": "mc",
+      "text": "(whisper) Huh? Who is that person outside?",
+      "next": ["house_decide_sleep_or_confront"]
+    },
+    {
+      "id": "house_decide_sleep_or_confront",
+      "speaker": "mc",
+      "text": "Should I sleep? Or ask that person?",
+      "next": ["end"]
+    },
+    {
+      "id": "house_sleep_ignore",
+      "speaker": "mc",
+      "text": "I hope that I'm only daydreaming. I should get to sleep and rest.",
+      "set_flags": ["ending_normal"],
+      "next": ["end"]
+    },
+    {
+      "id": "house_next_morning_1",
+      "speaker": "mc",
+      "text": "I should help uncle today.",
+      "set_flags": ["quest_go_to_bakery_2"],
+      "next": ["end"]
+    },
+    {
+      "id": "house_confronted_stranger_next_day",
+      "speaker": "mc",
+      "text": "Yesterday felt different. Did I really see someone?",
+      "next": ["house_confronted_continue"]
+    },
+    {
+      "id": "house_confronted_continue",
+      "speaker": "mc",
+      "text": "I should just get to the bakery.",
+      "set_flags": ["quest_go_to_bakery_3"],
+      "next": ["end"]
+    },
+    {
+      "id": "house_watch_news",
+      "speaker": "mc",
+      "text": "I should watch some news before going to bed.",
+      "next": ["news_breaking"]
+    },
+    {
+      "id": "house_sleep_after_news",
+      "speaker": "mc",
+      "text": "I should sleep now and tell uncle about this tomorrow.",
+      "set_flags": ["quest_go_to_bakery_4"],
+      "next": ["end"]
+    },
+    {
+      "id": "house_final_sleep",
+      "speaker": "mc",
+      "text": "Go home and get some rest.",
+      "set_flags": ["act1_complete"],
+      "next": ["end"]
+    },
+    {
+      "id": "end",
+      "speaker": "narrator",
+      "text": "End of event."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "quests": [
+    {
+      "id": "quest_go_to_bakery_1",
+      "title": "Help Uncle at the Bakery",
+      "description": "Uncle might need help. Head over to the bakery.",
+      "required_flag": "quest_go_to_bakery_1"
+    },
+    {
+      "id": "gotBreadQuest",
+      "title": "Deliver the Bread to Marlene",
+      "description": "Uncle asked you to deliver fresh bread to Marlene at the plaza.",
+      "required_flag": "gotBreadQuest"
+    },
+    {
+      "id": "deliveredBread",
+      "title": "Return to the Bakery",
+      "description": "You've delivered the bread. Head back to your uncle.",
+      "required_flag": "deliveredBread"
+    },
+    {
+      "id": "quest_go_to_bakery_2",
+      "title": "Back to Work",
+      "description": "Return to the bakery and help your uncle again.",
+      "required_flag": "quest_go_to_bakery_2"
+    },
+    {
+      "id": "quest_go_to_bakery_3",
+      "title": "A New Day",
+      "description": "Something felt off yesterday. Maybe work will distract you.",
+      "required_flag": "quest_go_to_bakery_3"
+    },
+    {
+      "id": "quest_go_to_bakery_4",
+      "title": "After the News",
+      "description": "Tell uncle about what you saw on the news last night.",
+      "required_flag": "quest_go_to_bakery_4"
+    },
+    {
+      "id": "quest_watch_news",
+      "title": "Catch the News",
+      "description": "Maybe watching the news will calm you down.",
+      "required_flag": "quest_watch_news"
+    },
+    {
+      "id": "act1_complete",
+      "title": "Act 1 Complete",
+      "description": "You've finished all tasks for now. Rest and prepare for what's ahead.",
+      "required_flag": "act1_complete"
+    }
+  ]
+}

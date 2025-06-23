@@ -1,0 +1,34 @@
+{
+  "npc": "narrator",
+  "dialogue": [
+    {
+      "id": "scene4_stranger",
+      "speaker": "narrator",
+      "text": "As you rest, a strange figure watches you from the shadows outside.",
+      "next": ["end"]
+    },
+    {
+      "id": "news_breaking",
+      "speaker": "narrator",
+      "text": "Breaking News. A man was found dead in the town of Townia tonight. According to the police, the victim is a young boy with a small heart birthmark on his left cheek, slightly messy hair and wide eyes. The cause of death is still unknown.",
+      "next": ["house_sleep_after_news"]
+    },
+    {
+      "id": "ending_normal",
+      "speaker": "narrator",
+      "text": "Ending 1: Another Normal Day for Me.",
+      "next": ["end"]
+    },
+    {
+      "id": "act1_complete",
+      "speaker": "narrator",
+      "text": "Act 1 Complete. A quiet beginning, or the start of something darker?",
+      "next": ["end"]
+    },
+    {
+      "id": "end",
+      "speaker": "narrator",
+      "text": "End of narration."
+    }
+  ]
+}

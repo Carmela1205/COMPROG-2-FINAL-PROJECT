@@ -1,0 +1,38 @@
+{
+  "npc": "documentarist",
+  "dialogue": [
+    {
+      "id": "deliver_to_documentarist",
+      "speaker": "documentarist",
+      "required_flags": ["gotBreadQuest"],
+      "text": "Oh, bread from the bakery! Thank you!",
+      "set_flags": ["deliveredBread", "metDocumentarist"],
+      "next": ["scene3_ask_name"]
+    },
+    {
+  "id": "scene3_ask_name",
+  "speaker": "documentarist",
+  "text": "What is your name?",
+  "set_flags": ["awaitingNameInput"],
+  "next": ["scene3_thanks"]
+    },
+    {
+      "id": "scene3_thanks",
+      "speaker": "documentarist",
+      "text": "Thank you, {playerName}.",
+      "next": ["scene4_return_bakery"]
+    },
+    {
+      "id": "no_quest_yet",
+      "speaker": "documentarist",
+      "required_flags": [],
+      "text": "Hello there. I'm a bit busy right now. Maybe later.",
+      "next": ["end"]
+    },
+    {
+      "id": "end",
+      "speaker": "narrator",
+      "text": "You walk away."
+    }
+  ]
+}

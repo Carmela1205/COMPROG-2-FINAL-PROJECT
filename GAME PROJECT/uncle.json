@@ -1,0 +1,171 @@
+{
+  "npc": "uncle",
+  "dialogue": [
+    {
+      "id": "scene2_uncle_intro",
+      "speaker": "uncle",
+      "required_flags": ["tvPrompted"],
+      "text": "Good morning, Namae. Are you helping again today?",
+      "choices": ["scene2_choice_yes", "scene2_choice_no"]
+    },
+    {
+      "id": "scene2_choice_yes",
+      "speaker": "mc",
+      "text": "Yes uncle, I will help you today.",
+      "next": ["scene2_uncle_help_yes"]
+    },
+    {
+      "id": "scene2_choice_no",
+      "speaker": "mc",
+      "text": "Sorry uncle, I can't help you.",
+      "next": ["scene2_uncle_help_no"]
+    },
+    {
+      "id": "scene2_uncle_help_yes",
+      "speaker": "uncle",
+      "text": "Thank you, Namae.",
+      "next": ["scene2_quest_start"]
+    },
+    {
+      "id": "scene2_uncle_help_no",
+      "speaker": "uncle",
+      "text": "No worries. You can come back later if you change your mind.",
+      "next": ["end"]
+    },
+    {
+      "id": "scene2_quest_start",
+      "speaker": "uncle",
+      "text": "Then can you find Marlene, the one who grew up in this place?",
+      "next": ["scene2_quest_details"]
+    },
+    {
+      "id": "scene2_quest_details",
+      "speaker": "uncle",
+      "text": "Deliver this bread to her. She loves to walk around, so you might find her outside in the plaza.",
+      "set_flags": ["gotBreadQuest"],
+      "next": ["end"]
+    },
+
+    {
+      "id": "scene4_return_from_marlene",
+      "speaker": "uncle",
+      "required_flags": ["deliveredToMarlene1"],
+      "text": "Thank you, Namae.",
+      "next": ["scene4_mc_whispers"]
+    },
+    {
+      "id": "scene4_mc_whispers",
+      "speaker": "mc",
+      "text": "(whisper) Huh? who is that person outside?",
+      "next": ["scene4_sleep_decision"]
+    },
+    {
+      "id": "scene4_sleep_decision",
+      "speaker": "mc",
+      "text": "Should I sleep? Or ask that person?",
+      "set_flags": ["uncleDay1Done"],
+      "next": ["end"]
+    },
+
+    {
+      "id": "scene6_uncle_repeat",
+      "speaker": "uncle",
+      "required_flags": ["day2"],
+      "text": "Good morning, Namae. Are you here to help again?",
+      "choices": ["scene6_choice_yes", "scene6_choice_no"]
+    },
+    {
+      "id": "scene6_choice_yes",
+      "speaker": "mc",
+      "text": "Yes, uncle.",
+      "next": ["scene6_quest_repeat"]
+    },
+    {
+      "id": "scene6_choice_no",
+      "speaker": "mc",
+      "text": "Later, uncle.",
+      "next": ["scene6_decline"]
+    },
+    {
+      "id": "scene6_decline",
+      "speaker": "uncle",
+      "text": "Okay, see you around.",
+      "next": ["end"]
+    },
+    {
+      "id": "scene6_quest_repeat",
+      "speaker": "uncle",
+      "text": "Okay, then deliver this order to the same person. Thank you.",
+      "set_flags": ["gotBreadQuest2"],
+      "next": ["end"]
+    },
+
+    {
+      "id": "scene7_question_stranger",
+      "speaker": "uncle",
+      "required_flags": ["deliveredToMarlene2"],
+      "text": "Thank you again for today, Namae.",
+      "next": ["scene7_mc_questions"]
+    },
+    {
+      "id": "scene7_mc_questions",
+      "speaker": "mc",
+      "text": "Uncle, do you know the person outside? I also saw him waiting outside yesterday.",
+      "next": ["scene7_uncle_confused"]
+    },
+    {
+      "id": "scene7_uncle_confused",
+      "speaker": "uncle",
+      "text": "What do you mean? There's no one waiting outside the Bakery.",
+      "next": ["scene7_mc_doubt"]
+    },
+    {
+      "id": "scene7_mc_doubt",
+      "speaker": "mc",
+      "text": "What??? But I definitely saw a person.",
+      "set_flags": ["uncleDay2Done"],
+      "next": ["end"]
+    },
+
+    {
+      "id": "scene_final_day_warning",
+      "speaker": "uncle",
+      "required_flags": ["newsSeen"],
+      "text": "Did you also hear the news???",
+      "next": ["scene_final_day_reminder"]
+    },
+    {
+      "id": "scene_final_day_reminder",
+      "speaker": "uncle",
+      "text": "You should be more careful from now on.",
+      "next": ["scene_final_day_quest"]
+    },
+    {
+      "id": "scene_final_day_quest",
+      "speaker": "uncle",
+      "text": "Go and deliver this to Marlene. Then go back early and we will close the shop.",
+      "set_flags": ["finalDelivery"],
+      "next": ["end"]
+    },
+
+    {
+      "id": "scene_end_uncle_goodbye",
+      "speaker": "uncle",
+      "required_flags": ["finalDeliveryComplete"],
+      "text": "Thank you. Go home now, I'll close the bakery.",
+      "next": ["scene_end_reminder"]
+    },
+    {
+      "id": "scene_end_reminder",
+      "speaker": "uncle",
+      "text": "Make sure you rest and be careful on your way.",
+      "next": ["end"]
+    },
+
+    {
+      "id": "end",
+      "speaker": "narrator",
+      "text": "..."
+    }
+  ]
+}
